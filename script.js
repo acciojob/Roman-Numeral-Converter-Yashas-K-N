@@ -15,9 +15,9 @@ function convertToRoman(num) {
 		return -1;
 	}
 	for ( let i =0; i<obj.length; i++ ){
-		while(num >= obj[0][1] ){
-			roman += obj[0][0];
-			num -= [0][1];
+		while(num >= obj[i][1] ){
+			roman += obj[i][0];
+			num -= [i][1];
 		}
 	}
 	return roman;
