@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-  	const obj = [
+  	let  obj = [
       ['M',1000], 
       ['D', 500], 
       ['C', 100], 
@@ -11,10 +11,10 @@ function convertToRoman(num) {
 
   //your code here
 	let roman = " ";
-	for ( const of obj ){
-		while(num >= obj[0][1] ){
-			roman += obj[0][0];
-			num -= obj[0][1];
+	for ( let i of obj ){
+		while(num >= obj[i][1] ){
+			roman += obj[i][0];
+			num -= obj[i][1];
 		}
 	}
 	return roman;
