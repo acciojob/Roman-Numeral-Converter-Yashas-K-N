@@ -14,10 +14,10 @@ function convertToRoman(num) {
 	if(i[1]< 0){
 		return -1;
 	}
-	for ( let i of obj ){
-		while(num >= i[1] ){
-			roman += i[0];
-			num -= i[1];
+	for ( let i of obj.length ){
+		while(num >= obj[0][1] ){
+			roman += obj[0][0];
+			num -= [0][1];
 		}
 	}
 	return roman;
