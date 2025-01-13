@@ -11,6 +11,9 @@ function convertToRoman(num) {
 
   //your code here
 	let roman = '';
+	if(i[1]< 0){
+		return -1;
+	}
 	for ( let i of obj ){
 		while(num >= i[1] ){
 			roman += i[0];
@@ -20,6 +23,7 @@ function convertToRoman(num) {
 	return roman;
 
 }
+
 
 
 
@@ -43,6 +47,32 @@ function convertToRoman(num) {
 //     }
 //     return roman;
 // }
+
+// function convertToRoman(num) {
+//     const obj = [
+//         ['M', 1000], 
+//         ['D', 500], 
+//         ['C', 100], 
+//         ['L', 50], 
+//         ['X', 10], 
+//         ['V', 5], 
+//         ['I', 1]
+//     ];
+
+//     let roman = '';
+//     for (let i = 0; i < obj.length; i++) { // Use index-based loop
+//         while (num >= obj[i][1]) { // Dynamically access the value using 'i'
+//             roman += obj[i][0]; // Dynamically access the symbol using 'i'
+//             num -= obj[i][1];
+//         }
+//     }
+
+//     return roman;
+// }
+
+// Example usage:
+console.log(convertToRoman(1987)); // Output: MCMLXXXVII
+
 
 // // Example usage:
 // console.log(convertToRoman(1987)); // Output: MCMLXXXVII
