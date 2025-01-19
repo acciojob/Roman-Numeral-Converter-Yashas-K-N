@@ -77,7 +77,7 @@ function convertToRoman(num) {
 // }
 
 // Example usage:
-// console.log(convertToRoman(1987)); // Output: MCMLXXXVII
+console.log(convertToRoman(1987)); // Output: MCMLXXXVII
 
 
 // // Example usage:
